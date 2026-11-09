@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ByteForge ReverseLab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">ByteForge ReverseLab - Mobile Binary & APK Security Analysis Lab</p>
+            <p class="date">Effective Date: November 05, 2026</p>
+        </header>
+
+        <section class="card">
+            <h2>1. Zero-Cloud Execution & Network Isolation</h2>
+            <p>ByteForge ReverseLab is built from the ground up as a fully isolated, offline application security laboratory. The application binary completely omits the <code>android.permission.INTERNET</code> declaration. It is impossible for the app to open network sockets, transmit analyzed binary code, leak symbol tables, or send telemetry to external servers.</p>
+        </section>
+
+        <section class="card">
+            <h2>2. Handling of Analyzed Binaries</h2>
+            <p>Any APK, DEX, or ELF native binary files inspected by ByteForge ReverseLab are parsed exclusively in temporary local device memory (RAM) and transient app sandbox storage. Analyzed code is never shared, never uploaded, and never indexed outside your device.</p>
+        </section>
+
+        <section class="card">
+            <h2>3. Cryptographic Cache Purge</h2>
+            <p>The application includes an in-app <strong>Cryptographic Lab Purge</strong> function. Executing this purge overwrites temporary disassembly caches, decompiled symbol databases, and session logs with cryptographic random noise, ensuring zero residual artifacts remain on the physical flash storage.</p>
+        </section>
+
+        <section class="card">
+            <h2>4. Contact Information</h2>
+            <p>For questions or verification of our airgap security architecture, contact: <a href="mailto:security@nextgen.mobile">security@nextgen.mobile</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 NextGen Mobile Engineering Labs. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
